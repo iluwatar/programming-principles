@@ -38,35 +38,15 @@ have any feedback or suggestions for improvement.
 
 ### Module/Class
 
-- [Programming Principles](#programming-principles)
-  - [Contents](#contents)
-    - [Generic](#generic)
-    - [Inter-Module/Class](#inter-moduleclass)
-    - [Module/Class](#moduleclass)
-  - [KISS](#kiss)
-  - [YAGNI](#yagni)
-  - [Do The Simplest Thing That Could Possibly Work](#do-the-simplest-thing-that-could-possibly-work)
-  - [Separation of Concerns](#separation-of-concerns)
-  - [Keep things DRY](#keep-things-dry)
-  - [Code For The Maintainer](#code-for-the-maintainer)
-  - [Avoid Premature Optimization](#avoid-premature-optimization)
-  - [Minimise Coupling](#minimise-coupling)
-  - [Law of Demeter](#law-of-demeter)
-  - [Composition Over Inheritance](#composition-over-inheritance)
-  - [Orthogonality](#orthogonality)
-  - [Robustness Principle](#robustness-principle)
-  - [Inversion of Control](#inversion-of-control)
-  - [Inversion of Control](#inversion-of-control-1)
-  - [Maximise Cohesion](#maximise-cohesion)
-  - [Liskov Substitution Principle](#liskov-substitution-principle)
-  - [Open/Closed Principle](#openclosed-principle)
-  - [Single Responsibility Principle](#single-responsibility-principle)
-  - [Hide Implementation Details](#hide-implementation-details)
-  - [Curly's Law](#curlys-law)
-  - [Encapsulate What Changes](#encapsulate-what-changes)
-  - [Interface Segregation Principle](#interface-segregation-principle)
-  - [Boy-Scout Rule](#boy-scout-rule)
-  - [Command Query Separation](#command-query-separation)
+- [Maximise Cohesion](#maximise-cohesion)
+- [Liskov Substitution Principle](#liskov-substitution-principle)
+- [Open/Closed Principle](#openclosed-principle)
+- [Single Responsibility Principle](#single-responsibility-principle)
+- [Hide Implementation Details](#hide-implementation-details)
+- [Curly's Law](#curlys-law)
+- [Encapsulate What Changes](#encapsulate-what-changes)
+- [Interface Segregation Principle](#interface-segregation-principle)
+- [Command Query Separation](#command-query-separation)
 
 ## KISS
 
@@ -292,9 +272,9 @@ How
 A method of an object may only call methods of:
 
 1. The object itself.
-1. An argument of the method.
-1. Any object created within the method.
-1. Any direct properties/fields of the object.
+2. An argument of the method.
+3. Any object created within the method.
+4. Any direct properties/fields of the object.
 
 Resources
 
@@ -491,7 +471,7 @@ Why
 
 How
 
-- Apply [Curly's Law](#Curly-s-Law).
+- Apply [Curly's Law](#curlys-law).
 
 Resources
 
@@ -619,3 +599,4 @@ Resources
 
 - [Command Query Separation in Wikipedia](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation)
 - [Command Query Separation by Martin Fowler](https://martinfowler.com/bliki/CommandQuerySeparation.html)
+
