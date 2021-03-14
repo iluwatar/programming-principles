@@ -29,6 +29,7 @@ There are certain universal laws and principles in software development that gui
 - [Command Query Separation](#command-query-separation)
 - [Murphy's Law](#murphys-law)
 - [Brooks's Law](#brookss-law)
+- [Linus's Law](#linuss-law)
 
 ## KISS
 
@@ -559,7 +560,7 @@ Resources
 
 ## Murphy's Law
 
-> Anything that can go wrong will go wrong
+> Anything that can go wrong will go wrong.
 
 It seems to be a universal law that when there is even the smallest possibility of something going wrong, it eventually will go wrong. It makes total sense when we think about probabilities and an infinite amount of trials. The law also applies to software development.
 
@@ -576,3 +577,13 @@ The law is related to software project management and was introduced by Fred Bro
 Resources
 
 - [Brooks's law in Wikipedia](https://en.wikipedia.org/wiki/Brooks%27s_law)
+
+## Linus's Law
+
+> Given enough eyeballs, all bugs are shallow.
+
+The law is originating from the book 'The Cathedral and the Bazaar' by Eric S. Raymond and was named in honor of the famous Finnish inventor of Linux operating system, Linus Torvalds. It's basically a praise to software reviewing process where multiple developers inspect the piece of code before it's accepted and merged.
+
+Resources
+
+- [Linus's law in Wikipedia](https://en.wikipedia.org/wiki/Linus%27s_law)
