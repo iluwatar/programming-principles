@@ -1,59 +1,32 @@
-# Programming Principles
+# Programming Principles <!-- omit in toc -->
 
 There are certain universal laws and principles in software development that guide architects, programmers, and anyone needing to design software. This page lists quite a few of those principles, although it's far from complete. This page is a fork of [programming-principles repository by Lars Kappert](https://github.com/webpro/programming-principles), who has done most of the work collecting the material.
 
-## Contents
+## Contents <!-- omit in toc -->
 
-### Generic
-
-- [KISS (Keep It Simple Stupid)](#kiss)
+- [KISS](#kiss)
 - [YAGNI](#yagni)
 - [Do The Simplest Thing That Could Possibly Work](#do-the-simplest-thing-that-could-possibly-work)
 - [Separation of Concerns](#separation-of-concerns)
-- [Keep Things DRY](#keep-things-dry)
+- [Keep things DRY](#keep-things-dry)
 - [Code For The Maintainer](#code-for-the-maintainer)
 - [Avoid Premature Optimization](#avoid-premature-optimization)
-- [Boy-Scout Rule](#boy-scout-rule)
-
-### Inter-Module/Class
-
 - [Minimise Coupling](#minimise-coupling)
 - [Law of Demeter](#law-of-demeter)
 - [Composition Over Inheritance](#composition-over-inheritance)
 - [Orthogonality](#orthogonality)
 - [Robustness Principle](#robustness-principle)
 - [Inversion of Control](#inversion-of-control)
-
-### Module/Class
-
-- [Programming Principles](#programming-principles)
-  - [Contents](#contents)
-    - [Generic](#generic)
-    - [Inter-Module/Class](#inter-moduleclass)
-    - [Module/Class](#moduleclass)
-  - [KISS](#kiss)
-  - [YAGNI](#yagni)
-  - [Do The Simplest Thing That Could Possibly Work](#do-the-simplest-thing-that-could-possibly-work)
-  - [Separation of Concerns](#separation-of-concerns)
-  - [Keep things DRY](#keep-things-dry)
-  - [Code For The Maintainer](#code-for-the-maintainer)
-  - [Avoid Premature Optimization](#avoid-premature-optimization)
-  - [Minimise Coupling](#minimise-coupling)
-  - [Law of Demeter](#law-of-demeter)
-  - [Composition Over Inheritance](#composition-over-inheritance)
-  - [Orthogonality](#orthogonality)
-  - [Robustness Principle](#robustness-principle)
-  - [Inversion of Control](#inversion-of-control)
-  - [Maximise Cohesion](#maximise-cohesion)
-  - [Liskov Substitution Principle](#liskov-substitution-principle)
-  - [Open/Closed Principle](#openclosed-principle)
-  - [Single Responsibility Principle](#single-responsibility-principle)
-  - [Hide Implementation Details](#hide-implementation-details)
-  - [Curly's Law](#curlys-law)
-  - [Encapsulate What Changes](#encapsulate-what-changes)
-  - [Interface Segregation Principle](#interface-segregation-principle)
-  - [Boy-Scout Rule](#boy-scout-rule)
-  - [Command Query Separation](#command-query-separation)
+- [Maximise Cohesion](#maximise-cohesion)
+- [Liskov Substitution Principle](#liskov-substitution-principle)
+- [Open/Closed Principle](#openclosed-principle)
+- [Single Responsibility Principle](#single-responsibility-principle)
+- [Hide Implementation Details](#hide-implementation-details)
+- [Curly's Law](#curlys-law)
+- [Encapsulate What Changes](#encapsulate-what-changes)
+- [Interface Segregation Principle](#interface-segregation-principle)
+- [Boy-Scout Rule](#boy-scout-rule)
+- [Command Query Separation](#command-query-separation)
 
 ## KISS
 
