@@ -558,3 +558,76 @@ The law is originating from the book 'The Cathedral and the Bazaar' by Eric S. R
 Resources
 
 - [Linus's law in Wikipedia](https://en.wikipedia.org/wiki/Linus%27s_law)
+
+## Reuse Release Equivalence Principle
+
+> The granule of reuse is the granule of release
+
+The Reuse Release Equivalence Principle enables the reuse of software components by tracking them through a release process and assigning them release numbers.
+
+Why
+
+- There is a need to know what changes new releases will bring in order to know when to integrate them.
+
+How
+
+- Group classes and modules that belong to the same components into cohesive groups.
+- Release groups of classes and modules together.
+
+Resources
+
+- Clean Architecture by Robert C. Martin, Chapter 13 Component Cohesion, The Reuse/Release Equivalence Principle
+- [Reuse Release Equivalence Principle](https://wiki.c2.com/?ReuseReleaseEquivalencePrinciple)
+
+## Common Closure Principle
+
+> Gather into components those classes that change for the same reasons and at the same times. Separate into different components those classes that change at different times and for different reasons.
+
+
+A component should have only one reason to change.
+
+This is a restatement of the Single Responsibility Principle at the component level. It is also related to the Open Closed Principle because it focuses on the strategy of closing components from changes
+
+Why
+
+- When changes are required, they should be confined to the minimal number of components instead of being distributed across many components.
+
+How
+
+-  Group together in the same components all the classes that are likely to change for the same reasons.
+
+Resources
+
+- Clean Architecture by Robert C. Martin, Chapter 13 Component Cohesion, The Common Closure Principle
+- [Common Closure Principle](https://wiki.c2.com/?CommonClosurePrinciple)
+
+Related
+
+- [Single Responsibility Principle](#single-responsibility-principle)
+- [Open Closed Principle](https://en.wikipedia.org/wiki/Open/closed_principle)
+
+## Common Reuse Principle
+
+> Don't force users of a component to depend on things they don't need.
+
+Classes and modules that tend to be reused together should be part of the same component.
+
+This principle can be viewed as a generalization of the interface segregation principle.
+
+Why
+
+- When a component depends on another one, each time the latter is modified, the former needs to be recompiled, revalidated, and redeployed. This applies even when the using component doesn't require any changes or depends on a single class of the used component.
+
+How
+
+- Put classes that depend solely on each other into the same component, and avoid depending on classes from different components.
+
+Resources
+
+- Clean Architecture by Robert C. Martin, Chapter 13 Component Cohesion, The Common Reuse Principle
+- [Common Reuse Principle](https://wiki.c2.com/?CommonReusePrinciple)
+
+Related
+
+- [Interface Segregation Principle](#interface-segregation-principle)
+
