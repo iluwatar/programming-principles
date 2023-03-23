@@ -563,7 +563,7 @@ Resources
 
 > The granule of reuse is the granule of release
 
-The Reuse Release Equivalence Principle enables the reuse of software components by tracking them through a release process and assigning them release numbers.
+Reuse of software components is enhanced by tracking them through a release process and assigning them release numbers.
 
 Why
 
@@ -586,7 +586,7 @@ Resources
 
 A component should have only one reason to change.
 
-This is a restatement of the Single Responsibility Principle at the component level. It is also related to the Open Closed Principle because it focuses on the strategy of closing components from changes
+This is a restatement of the Single Responsibility Principle at the component level. It is also related to the Open Closed Principle because it focuses on the strategy of closing components from changes.
 
 Why
 
@@ -612,7 +612,7 @@ Related
 
 Classes and modules that tend to be reused together should be part of the same component.
 
-This principle can be viewed as a generalization of the interface segregation principle.
+This principle can be viewed as a generalization of the Interface Segregation Principle.
 
 Why
 
