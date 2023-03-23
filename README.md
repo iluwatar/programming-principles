@@ -631,3 +631,72 @@ Related
 
 - [Interface Segregation Principle](#interface-segregation-principle)
 
+## Acyclic Dependencies Principle
+
+> Allow no cycles in the component dependency graph.
+
+The dependency structure of components can be viewed as a graph, with components as the nodes and dependency relationships as the directed edges. This graph should not have any cycles, meaning there should be no cyclic dependencies among software components.
+
+Why
+
+- Elements in a cycle represent a component that requires all its elements to be developed, validated, tested, and deployed together.
+- In the presence of a cycle, it becomes difficult to isolate components, making unit testing and releasing difficult.
+- Cyclic dependencies may require knowing the order in which the components must be built.
+
+How
+
+- Apply the Dependency Inversion Principle: replace the dependency of a high-level component on a low-level one with an abstraction that both of them depend on.
+- When a cycle occurs, break the components involved creating new components.
+
+Resources
+
+- Clean Architecture by Robert C. Martin, Chapter 14 Component Coupling, The Acyclic Dependencies Principle
+- [Acyclic dependencies principle - Wikipedia](https://en.wikipedia.org/wiki/Acyclic_dependencies_principle)
+- [Acyclic Dependencies Principle (c2.com)](https://wiki.c2.com/?AcyclicDependenciesPrinciple)
+
+Related
+
+- [Dependency inversion principle - Wikipedia](https://en.wikipedia.org/wiki/Dependency_inversion_principle)
+
+## Stable Dependencies Principle
+
+> Depend in the direction of stability
+
+Ensure that components that are intended to be easy to change are not depended on by components that are harder to change.
+
+The instability of a component, where stability is defined as the amount of work required to change it, should be greater than the instability of the components it depends on.
+
+Why
+
+- In designing a system, some components should be easy to change and others should not. The latter are the ones with higher instability, while the former are the most stable.
+
+How
+
+- Measure the instability $I$ of a component $C$ with this formula: $I = DO \div (DI + DO)$ where $DI$ consists in the number of components that depend on $C$, and $DO$ is the number of components that $C$  depends on. 
+
+Resources
+
+- Clean Architecture by Robert C. Martin, Chapter 14 Component Coupling, The Stable Dependencies Principle
+- [Stable Dependencies Principle (c2.com)](https://wiki.c2.com/?StableDependenciesPrinciple)
+
+## Stable Abstractions Principle
+
+> A component should be as abstract as it is stable.
+
+Stable components should also be abstract, so that their stability does not prevent them from being extended. At the same time, unstable components should be concrete, making it easy to change them.
+
+Why
+
+- Components that are unlikely to change are highly stable. However, their lack of instability makes it even harder to extend them. To guarantee flexibility, these components can be extended without requiring modification by leveraging abstract classes and interfaces.
+
+How
+
+- Keep track of abstractness $A$ of a component, which is calculated as follows: $A = N_{a} \div N_{c}$ where $N_{c}$ is the number of classes in the component, and $N_{a}$ is the number of abstract classes and interfaces in the component.
+- Avoid creating highly stable and concrete component because they cannot be extended; they are not abstract and it is difficult to change due to their stability.
+- Do not make components too unstable and abstract, because they may become useless.
+
+Resources
+
+- Clean Architecture by Robert C. Martin, Chapter 14 Component Coupling, The Stable Abstractions Principle
+- [Stable Abstractions Principle (c2.com)](https://wiki.c2.com/?StableAbstractionsPrinciple)
+
