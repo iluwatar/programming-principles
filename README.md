@@ -1,4 +1,11 @@
-# Programming Principles
+---
+title: "Essential Java Design Principles for Developers"
+shortTitle: Java Design Principles
+description: "Discover the key principles behind effective Java design patterns. This page provides clear insights into the theory and practice of Java design principles for better software development."
+language: en
+---
+
+## Introduction to Programming Principles
 
 There are certain universal laws and principles in software development that guide architects, programmers, and anyone needing to design software. This page lists quite a few of those principles, although it's far from complete. This page is a fork of [programming-principles repository by Lars Kappert](https://github.com/webpro/programming-principles), who has done most of the work collecting the material.
 
